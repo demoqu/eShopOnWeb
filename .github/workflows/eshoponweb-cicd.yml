@@ -11,7 +11,10 @@ env:
   SUBSCRIPTION-ID: 3d73ba5a-0847-4e77-a22c-e3dedecae538
   WEBAPP-NAME: az400-webapp-DEMOQU
 
-
+runs:
+  using: 'node20'
+  main: 'main.js'
+  
 jobs:
   #Build, test and publish .net web project in repository
   buildandtest:
